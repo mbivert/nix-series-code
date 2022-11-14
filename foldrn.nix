@@ -9,11 +9,11 @@ let
 		; in aux s 1;
 
 	foldrn = g: s: n: let aux = acc: i:
-		if i == 0 then
+		if i > n then
 			acc
 		else
-			aux (g i acc) (i - 1)
-		; in aux s n;
+			g i (aux acc (i + 1))
+		; in aux s 1;
 
 	# (sub (sub (sub (sub (sub 0 1) 2) 3) 4) 5)
 	#	= -1-2-3-4-5

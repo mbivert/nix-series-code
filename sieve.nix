@@ -12,7 +12,7 @@ let
 	foldln = foldlnseq (x: x);
 
 	toFloat = n: n + 0.1 - 0.1;
-	isdiv = i: j: ceil(toFloat(i) / j) * j == i;
+	isDiv = i: j: ceil(toFloat(i) / j) * j == i;
 
 	sieve = n: foldln (p: i:
 		if p i then
