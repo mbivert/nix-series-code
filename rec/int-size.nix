@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate --eval
+#!/bin/nix-instantiate
 let
 	f = n: m:
 		if n * 2 == 0 || n * 2 <= 0

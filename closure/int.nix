@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate --eval
+#!/bin/nix-instantiate
 with builtins;
 let
 	zero = x: y: x;

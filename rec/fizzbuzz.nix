@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate --eval
+#!/bin/nix-instantiate
 with builtins;
 let
 	mod = a: b: a - (b * (div a b));

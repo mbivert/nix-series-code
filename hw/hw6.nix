@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate --eval
+#!/bin/nix-instantiate
 builtins.trace(
 	"hello world"
 ) builtins.trace (
