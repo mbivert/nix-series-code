@@ -14,7 +14,11 @@ let
 	x = nil;
 	y = cons 3 nil;
 	z = cons "hello" (cons 3 (cons (x: x) nil));
+	# We're being "lazy" here...
 	w = cons nil (cons nil nil);
 in
-	# This is just to force Nix to evaluate everything
+	# This is just to force Nix to evaluate everything;
+	# in a later exercise, we'll learn how to print such
+	# lists.
 	deepSeq [x y z w]
+	"ok"

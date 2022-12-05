@@ -4,7 +4,7 @@ with (import ./list.nix);
 with (import ./list-lib.nix);
 let
 	zeroes = cons 0 (zeroes);
-	take = n: xs: let aux = acc: xs: i:
+	take   = n: xs: let aux = acc: xs: i:
 		if i == n then
 			acc
 		else
