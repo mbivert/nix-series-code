@@ -5,7 +5,8 @@ introducing functional programming via Nix's language:
   1. [On Nix's Language: Introduction][tales-nix-1];
   2. [On Nix's Language: Recursive Functions][tales-nix-2];
   3. [On Nix's Language: Closures][tales-nix-3];
-  4. [On Nix's Language: Pragmatism, laziness][tales-nix-4].
+  4. [On Nix's Language: Pragmatism, laziness][tales-nix-4];
+  5. [On Nix's Language: Mathematical Expressions, Brainf*ck][tales-nix-5].
 
 **<u>Note</u>**: Some of the code doesn't compile, on purpose (e.g.
 [hw1][gh-mb-nix-hw1]).
@@ -16,3 +17,4 @@ introducing functional programming via Nix's language:
 [tales-nix-2]: https://tales.mbivert.com/on-nix-language-recursive-functions/
 [tales-nix-3]: https://tales.mbivert.com/on-nix-language-closures/
 [tales-nix-4]: https://tales.mbivert.com/on-nix-language-pragmatism-laziness/
+[tales-nix-5]: https://tales.mbivert.com/on-nix-language-maths-expressions-brainfuck/
