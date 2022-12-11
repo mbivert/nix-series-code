@@ -3,7 +3,7 @@ with builtins;
 with (import ./list.nix);
 let
 	isMember = e: xs:
-		if isEmpty l then false
+		if isEmpty xs then false
 		else if e == (car xs) then true
 		else isMember e (cdr xs);
 

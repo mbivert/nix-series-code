@@ -32,5 +32,5 @@ deal of redundancies in [``lambda_test.nix``][gh-mb-nix-lambda-test].
 [tales-nix-3]:           https://tales.mbivert.com/on-nix-language-closures/
 [tales-nix-4]:           https://tales.mbivert.com/on-nix-language-pragmatism-laziness/
 [tales-nix-5]:           https://tales.mbivert.com/on-nix-language-maths-expressions-brainfuck/
-[tales-nix-6]:           https://tales.mbivert.com/on-nix-language-lamdba-calculus/
+[tales-nix-6]:           https://tales.mbivert.com/on-nix-language-lambda-calculus/
 [tales-ftests]:          https://tales.mbivert.com/on-a-function-based-test-framework/
