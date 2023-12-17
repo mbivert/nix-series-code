@@ -18,7 +18,6 @@ let
 	w = cons nil (cons nil nil);
 in
 	# This is just to force Nix to evaluate everything;
-	# in a later exercise, we'll learn how to print such
-	# lists.
+	# we'll soon see how to print lists.
 	deepSeq [x y z w]
 	"ok"

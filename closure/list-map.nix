@@ -25,4 +25,6 @@ in
 	# closure-based list implementation.
 	#
 	# It's really functions all the way down.
-	trace(print (map (x: x * x) (range 12 21))) "ok"
+	trace(print (map  (x: x * x) (range 12 21)))
+	trace(print (map2 (x: x * x) (range 12 21)))
+	"ok"

@@ -1,7 +1,10 @@
 #!/bin/nix-instantiate
 with builtins;
 let
-	mk = f: x: (y: f x y);
-	g  = x: y: x + y;
+	callFunWith = f: x: (y: f x y);
+	add         = x: y: x + y;
+	add3To      = callFunWith add 3;
 in
-	(mk g 3) 2
+	trace(add3To 7)
+	trace((callFunWith add 7) 3)
+	"ok"

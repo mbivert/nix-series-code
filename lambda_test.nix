@@ -1481,8 +1481,8 @@ let
 			expected =
 				L.eval (G "${S mult} ${S three} ${S two}");
 		}
-		# This one's working, but real slow; previous ones already
-		# takes a few noticeable seconds.
+		# Working but slow; the previous one already
+		# takes a few seconds.
 /*
 		{
 			descr    = ''eval: fact four == four * three * two'';

@@ -7,7 +7,7 @@ rec {
 	nil    = (a: b: a);
 	cons   = h: t: (a: b: (b h t));
 
-	isEmpty = l: l true (a: b: false);
+	isEmpty = l: l true (h: t: false);
 
 	access  = x: l:
 		l

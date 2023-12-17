@@ -12,7 +12,10 @@ let
 		else 1 + (length2 (cdr xs))
 	;
 
-	xs = cons 1 (cons 2 (cons 3 null));
+	xs = cons 1 (cons 2 (cons 3 nil));
 in
-	trace(length xs) (length2 xs)
+	trace(length xs)
+	trace(length2 xs)
+	"ok"
+
 
