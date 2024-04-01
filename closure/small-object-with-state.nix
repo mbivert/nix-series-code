@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate
+#!/bin/nix-instantiate --eval
 with builtins;
 let
 	mkUser = name: age: email: (func:

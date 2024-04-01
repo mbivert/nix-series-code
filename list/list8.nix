@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate
+#!/bin/nix-instantiate --eval
 with builtins;
 let
 	map = f: xs: let n = length xs; aux = acc: i:

@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate
+#!/bin/nix-instantiate --eval
 rec {
 	toString = m:
 		if m.type == "var" then

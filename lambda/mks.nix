@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate
+#!/bin/nix-instantiate --eval
 rec {
 	# (m n)
 	mkApply  = m: n: { type = "apply";  left  = m; right = n; };

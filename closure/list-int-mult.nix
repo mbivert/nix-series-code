@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate
+#!/bin/nix-instantiate --eval
 with builtins;
 /*
  * This is the first list implementation, but things would

@@ -1,2 +1,2 @@
-#!/bin/nix-instantiate
+#!/bin/nix-instantiate --eval
 ["hello" "world"]

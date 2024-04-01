@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate
+#!/bin/nix-instantiate --eval
 with builtins;
 let
 	iterate = f: n: [f n]++(iterate f (f n));

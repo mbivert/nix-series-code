@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate
+#!/bin/nix-instantiate --eval
 with builtins;
 with (import ./freeVars-allVars.nix);
 with (import ./rename.nix);

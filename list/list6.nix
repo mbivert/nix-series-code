@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate
+#!/bin/nix-instantiate --eval
 with builtins;
 let
 	xs = [(1+3) "hi" ("hello"+" "+"world") 3 (x: 3)];

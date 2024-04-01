@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate
+#!/bin/nix-instantiate --eval
 with builtins;
 with (import ./list.nix);
 with (import ./list-lib.nix);
