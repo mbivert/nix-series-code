@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate --eval
+#!/usr/bin/env -S nix-instantiate --eval
 with builtins;
 let
 	ftests = (import ../ftests.nix);

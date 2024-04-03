@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate --eval
+#!/usr/bin/env -S nix-instantiate --eval
 with builtins;
 
 # This file contains the new, church boolean-based list

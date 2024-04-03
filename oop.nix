@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate --eval
+#!/usr/bin/env -S nix-instantiate --eval
 with builtins;
 let
 	apply  = f: l: foldl' (x: y: x y) f l;

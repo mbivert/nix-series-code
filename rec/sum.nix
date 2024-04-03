@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate --eval
+#!/usr/bin/env -S nix-instantiate --eval
 with builtins;
 let
 	sum = n: if n == 0 then 0 else n+(sum (n - 1));

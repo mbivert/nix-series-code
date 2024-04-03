@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate --eval
+#!/usr/bin/env -S nix-instantiate --eval
 rec {
 	# α-equivalence, M{y,x} (renaming x as y in M)
 	rename = m: y: x:

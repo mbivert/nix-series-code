@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate --eval
+#!/usr/bin/env -S nix-instantiate --eval
 rec {
 	freeVars = m:
 		if m.type == "var" then { ${m.name} = true; }

@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate --eval
+#!/usr/bin/env -S nix-instantiate --eval
 let
 	# toString can't coerce a function (e.g. (x: 3)) to a
 	# string, hence why we're applying it here

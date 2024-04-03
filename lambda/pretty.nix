@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate --eval
+#!/usr/bin/env -S nix-instantiate --eval
 rec {
 	pretty = m: let aux = m: inLambda: inApp:
 		if m.type == "var" then

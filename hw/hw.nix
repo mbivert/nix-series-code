@@ -1,4 +1,4 @@
-#!/bin/nix-instantiate --eval
+#!/usr/bin/env -S nix-instantiate --eval
 /*
  * Regarding ``with builtins;``, it is an import-like.
  * From a user perspective, suffice to know, for now,
