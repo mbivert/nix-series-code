@@ -40,6 +40,7 @@ let
 							(super2 "get" "name")
 							(super2 "get" "age")
 							(super2 "get" "email")
+							field
 				)
 			else if func == "get" then
 				(key: if key == "field" then field else super "get" key)
@@ -48,7 +49,7 @@ let
 		);
 
 	u = mkTeacher "Bob"  42 "bob@uni.com" "CS";
-	v = (u "set" "name" "Joe") "set" "field" "IT";
+	v = ((u "set" "name" "Joe") "set" "field" "IT") "set" "age" 16;
 in
 	trace (u "get" "name")
 	trace (u "get" "age")
@@ -57,4 +58,5 @@ in
 	trace (u "isAdult")
 	trace (v "get" "name")
 	trace (v "get" "field")
+	trace (v "isAdult")
 	"ok"
