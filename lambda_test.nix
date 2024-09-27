@@ -767,7 +767,7 @@ let
 		}
 
 		# NOTE: we're indirectly testing again L.parse below ("G"
-		# is a shortcut calling L.parse, and assuming success)
+		# is a shortcut calling L.parse, assuming success)
 		{
 			descr    = ''freeVars "hello"'';
 			fun      = L.freeVars;
@@ -868,7 +868,7 @@ let
 			expected = (G "y");
 		}
 		{
-			descr    = ''rename "(x y) (y z) " y x'';
+			descr    = ''rename "(x y) (y x z)" y x'';
 			fun      = L.rename;
 			args     = [(G "(x y) (y x z) ") "y" "x"];
 			expected = (G "(y y) (y y z) ");
@@ -892,13 +892,7 @@ let
 			expected = (G "λz. λy. y z foo bar");
 		}
 		{
-			descr    = ''rename "λx. λy. y z foo bar" z x'';
-			fun      = L.rename;
-			args     = [(G "λx. λy. y z foo bar") "z" "x"];
-			expected = (G "λz. λy. y z foo bar");
-		}
-		{
-			descr    = ''rename "λx. λy. y z foo bar" z x'';
+			descr    = ''rename "λx. λy. y z foo bar" foo y'';
 			fun      = L.rename;
 			args     = [(G "λx. λy. y z foo bar") "foo" "y"];
 			expected = (G "λx. λfoo. foo z foo bar");

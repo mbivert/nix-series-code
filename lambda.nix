@@ -162,7 +162,7 @@ rec {
 	 * Interpretation/evaluation
 	 */
 
-	# α-equivalence, M{y,x} (renaming x as y in M)
+	# α-renaming, M{y,x} (renaming x as y in M)
 	rename = m: y: x:
 		if m.type == "var" then m // {
 			name = if m.name == x then y else m.name;
