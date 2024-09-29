@@ -922,7 +922,7 @@ let
 			expected = (G "λx. λy. x y");
 		}
 		{
-			descr    = ''substitute: unbound, unused variable'';
+			descr    = ''substitute: deeper bound variable not substituted'';
 			fun      = L.substitute;
 			args     = [(G "λx. λz. x z") (G "λx. λy. x y") "z"];
 			expected = (G "λx. λz. x z");
@@ -1091,13 +1091,13 @@ let
 			expected = (G "x");
 		}
 		{
-			descr    = ''eval: unreductible apply'';
+			descr    = ''eval: irreducible apply'';
 			fun      = L.eval;
 			args     = (G "x y");
 			expected = (G "x y");
 		}
 		{
-			descr    = ''eval: unreductible applies'';
+			descr    = ''eval: irreducible applies'';
 			fun      = L.eval;
 			args     = (G "x y z");
 			expected = (G "x y z");
@@ -1260,7 +1260,7 @@ let
 						(λp. λx. λy. p x y)
 						(λx. λy. x)
 						(λx. λy. x)
-						(λx. λy. y)))
+						(λx. λy. y))
 			'');
 			expected = T;
 		}
@@ -1291,7 +1291,7 @@ let
 		{
 			descr    = ''eval: xor F T == T'';
 			fun      = L.eval;
-			args     = (G "${S _or} ${S F} ${S T}");
+			args     = (G "${S xor} ${S F} ${S T}");
 			expected = T;
 		}
 		{
